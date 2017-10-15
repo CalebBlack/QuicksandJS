@@ -19,7 +19,7 @@ Paths are where your data is stored. It represents the path of objects in the in
 #### set
 The set method sets the value at the specified path with any value.
 
-```qs.onChange(path,value)```
+```qs.set(path,value)```
 
 #### get
 The get method allows you to get the value at the specified path.
@@ -47,4 +47,5 @@ state.onChange(path,(newValue,oldValue)=>{
 })
 state.didChange(path,(newValue,oldValue)=>{return typeof newValue != typeof oldValue});
 state.set(path,'firstvalue');
-state.set(path,'secondvalue')```
+state.set(path,'secondvalue')
+```
