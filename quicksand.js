@@ -48,6 +48,9 @@ class Quicksand {
     put(this.data,path,newValue);
   }
   get(path){
+    if (path === null) {
+      return this.data;
+    }
     return find(this.data,path);
   }
 }
