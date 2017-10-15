@@ -6,7 +6,8 @@ You must create a new Quicksand instance in order to use it.
 
 ```
 const Quicksand = require('quicksandjs');
-var qs = new Quicksand();```
+var qs = new Quicksand();
+```
 
 ## Paths
 Paths are where your data is stored. It represents the path of objects in the internal data object, and is formatted by joining each part of the parts with periods.
