@@ -3,8 +3,11 @@ const find = require('./find');
 const put = require('./put');
 
 class Quicksand {
-  constructor(props){
-    this.data = {};
+  constructor(initialData = {}){
+    if (typeof initialData != 'object') {
+      throw new Error('invalid initial data');
+    }
+    this.data = initialData;
     this.changeListeners = {};
     this.changeChecks = {};
     this.onChange = this.onChange.bind(this);
