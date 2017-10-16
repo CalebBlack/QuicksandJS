@@ -32,7 +32,7 @@ The onChange method allows you to add a function to be called when the data at a
 ```qs.onChange(path,function)```
 
 #### didChange
-The didChange method allows you to set the function to determine whether the onChange functions should be called (the function should return a boolean value). Unlike the onChange method, there can only be one didChange per path, so calling this multiple times on the same path will just override your previous functions.
+The didChange method allows you to set the function to determine whether the onChange functions should be called (the function should return a boolean value). Unlike the onChange method, there can only be one didChange method per path, so calling this multiple times on the same path will just override your previous functions.
 
 ```qs.didChange(path,function)```
 
