@@ -14,6 +14,9 @@ Paths are where your data is stored. It represents the path of objects in the in
 
 ```first.second.third```
 
+### Warning
+Paths represent the literal path inside the internal data object. Therefore you should NOT change things on different levels of the same root path. For example, if we have a path for a book item such as ```books.publisher.bookname``` and we use the set method to modify the books through the publisher path at ```books.publisher``` by setting the value as something like ```{bookname:bookvalue}``` it will overwrite the other properties of the publisher object, and it will not call the callback functions of the book paths.
+
 ## Methods
 
 #### set
