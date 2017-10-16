@@ -1,5 +1,5 @@
 # Quicksand.JS
-Quicksand is a state/data management solution. It is based upon creating listeners for data change events.
+Quicksand is a lightweight javascript state/data management solution. Instead of being based on actions like redux, instead it focuses on setting the new state directly, and listening to changes with callback functions in order to reflect the new data across your application effectively. This gives several advantages when used with React, including supporting better two way data binding and unnecessary re-renderering by not pushing the data into the component props.
 
 ## Initializing
 You must create a new Quicksand instance in order to use it.
